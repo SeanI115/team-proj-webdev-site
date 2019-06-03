@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/css/q_one.css">
+        <meta name="google-signin-client_id" content="706501610264-8g79rrsdiamum157hom25psli7c33ond.apps.googleusercontent.com">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <script src="/js/q_two.js"></script>
+        <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="https://apis.google.com/js/platform.js" async defer></script>
+
+    </head>
+    <body>
+        <nav class="navbar navbar-inverse">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand", id= "welcome">Welcome</a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown">Puppy Quiz</a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="/#">Home</a></li>
+                                <li><a href="/q_one">Quiz 1</a></li>
+                                <li><a href="/q2_one">Quiz 2</a></li>
+                                <li><a href="/leaderboard">Leaderboard</a></li>
+                                <li><a href="/leaderboard2">Leaderboard2</a></li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="navbar-header">
+                    <a class="navbar-brand", id= "score">Score: </a>
+                </div>
+                </div>
+                <a href="/#" id="signout">Sign out</a>
+
+            </div>
+        </nav>
+            <div class="jumbotron-fluid text-center">
+                <h1>Which dog is a pug?</h1>
+            </div>
+            <div class="container">
+                <div class="modal" id="subModal" role="dialog">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" onclick="location.href='/q_three'" id="modclose" class="close" data-toggle="modal" data-target="#subModal">&times;</button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Answer Saved!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <form id="q_two">
+                    <div class="form-group">
+                        <ul>
+                            <li><input type="checkbox" id="cb1" name="dog" value="10"/>
+                                <label for="cb1"><img class="img-fluid" src="/images/pug.jpg" /></label>
+                            </li>
+                            <li><input type="checkbox" id="cb2" name="dog" value="0"/>
+                                <label for="cb2"><img class="img-fluid" src="/images/bulldog.jpg" /></label>
+                            </li>
+                            <li><input type="checkbox" id="cb3" name="dog" value="0" />
+                                <label for="cb3"><img class="img-fluid" src="/images/cartdog.jpg" /></label>
+                            </li>
+                        </ul>
+                    </div>
+                    <a type="button" id="subButton" class="btn btn-primary btn-lg btn-block" role="button">Submit Answer!</a>
+                </form>
+            </div>
+    </body>
+</html>
