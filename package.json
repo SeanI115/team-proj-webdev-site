@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/CptS-489-WSU/team-project-jts#readme",
   "dependencies": {
-    "@okta/oidc-middleware": "^2.0.0",
+    "@okta/oidc-middleware": "^5.0.0",
     "ejs": "^2.6.1",
     "express": "^4.16.4",
     "express-session": "^1.16.1",
